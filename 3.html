@@ -1,0 +1,47 @@
+<html>
+<head>
+<style>
+.cities
+{
+	background-color:powderblue;
+}
+span.note
+{
+	color:red;
+	font-size:120%;
+	border:1px solid black;
+}
+</style>
+</head>
+<body>
+<script>
+function fun1()
+{
+	var x=document.getElementsByClassName("cities");
+	for(var i=0;i<x.length;i++)
+	{
+		x[i].style.display="none";
+	}
+}
+</script>
+
+<div class="cities">
+	<h2>LONDON </h2>
+	
+</div>
+<p> London i scapital of england</p>
+<div class="cities">
+	<h2>PARIS </h2>
+
+</div>
+<p> Paris is the capital of France </p>
+<div class="cities">
+	<h2>TOKYO </h2>
+	
+</div>
+<p> Tokya is capital of japan </p>
+<p> I LOVE MY COUTRY <span class="note"> INDIA </span> </p>
+<p> Click the button to hide the name of the countries </p>
+<button onclick="fun1()">Hide City Name </button>
+</body>
+</html>
